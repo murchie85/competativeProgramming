@@ -8,6 +8,7 @@ This repo will be used for my self-development towards learning how to compete i
 |[LEARNING OBJECTIVES ](#LEARNING-OBJECTIVES) |
 |[[Speed Boosts](#Speed-Boosts) |
 |[RESOURCES](#RESOURCES) |  
+| [Sample Questions](#Sample-Questions) |
 
 
 
@@ -60,3 +61,8 @@ To be good at competative programming you need to move fast.
 - [Google Playlist](https://www.youtube.com/playlist?list=PLllx_3tLoo4csmLveWHpjcRTXVMCcvvmc)
 - [Coding Tips](https://www.youtube.com/watch?v=WZkTPJE0aRE&list=PLllx_3tLoo4csmLveWHpjcRTXVMCcvvmc&index=5&ab_channel=GoogleStudents)
 - [Google FAQ](https://codingcompetitions.withgoogle.com/kickstart/faq)
+
+
+
+
+## Sample Questions
