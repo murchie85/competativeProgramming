@@ -49,6 +49,13 @@ To be good at competative programming you need to move fast.
 
 ## RESOURCES  
   
+#### Hands On  
+
+- [hackerank](https://www.hackerrank.com/)
+  
+### Theory and Tips  
+  
+
 - [Google Introvid](https://www.youtube.com/watch?v=cMHY4UouGCk&list=PLllx_3tLoo4csmLveWHpjcRTXVMCcvvmc&index=8&ab_channel=LifeatGoogle)  
 - [Google Playlist](https://www.youtube.com/playlist?list=PLllx_3tLoo4csmLveWHpjcRTXVMCcvvmc)
 - [Coding Tips](https://www.youtube.com/watch?v=WZkTPJE0aRE&list=PLllx_3tLoo4csmLveWHpjcRTXVMCcvvmc&index=5&ab_channel=GoogleStudents)
