@@ -110,3 +110,32 @@ getMedian(numberArray)
 getMode(numberArray)
 
 ```
+  
+## Weighted Mean  
+
+```python
+#inputs
+
+size        = "5"
+inputArray  = "10 40 30 50 20 "
+weightArray = "1 2 3 4 5 "
+
+# format inputs
+
+size = int(size)
+inputArray = list(map(int, inputArray.split()))
+weightArray = list(map(int, weightArray.split()))
+
+# weighted mean
+def getWeightedMean(inputArray,weightArray):
+    combinedArray = []
+    for x in range(0, len(inputArray)):
+        weightedValue = inputArray[x] * weightArray[x]
+        combinedArray.append(weightedValue)
+    
+    weightedMeanValue =  sum(combinedArray)/sum(weightArray)
+    
+    print(weightedMeanValue)
+    
+getWeightedMean(inputArray,weightArray)
+```
