@@ -8,7 +8,8 @@ This repo will be used for my self-development towards learning how to compete i
 |[LEARNING OBJECTIVES ](#LEARNING-OBJECTIVES) |
 |[[Speed Boosts](#Speed-Boosts) |
 |[RESOURCES](#RESOURCES) |  
-| [Sample Questions](#Sample-Questions) |
+|[Useful Code Snippets](#Useful-Code-Snippets) |
+|[Sample Questions](#Sample-Questions) |
 
 
 
@@ -30,6 +31,7 @@ This repo will be used for my self-development towards learning how to compete i
 **CS MATH**  
   
 - `BIG O`
+- `Graph theory` 
 - Measure compute time  
 - `linear time`, `polynomial time` etc..  
 
@@ -45,8 +47,10 @@ To be good at competative programming you need to move fast.
 **quit app** `⌘ q`
 
 
+### Windows Shortcuts
 
-
+**JUMP TO ADDRESS BAR**   `ctl + L`  
+  
 
 ## RESOURCES  
   
@@ -63,6 +67,46 @@ To be good at competative programming you need to move fast.
 - [Google FAQ](https://codingcompetitions.withgoogle.com/kickstart/faq)
 
 
+# Useful Code Snippets
 
 
-## Sample Questions
+
+# Sample Questions
+ 
+[Challenges](https://www.hackerrank.com/interview/interview-preparation-kit)  
+  
+## Mean, Median ,Mode 
+
+```python
+numberArray = list(map(int, inputnum.split()))
+
+
+def getMean(numberArray):
+    meanOut = sum(numberArray)/len(numberArray)
+    print(meanOut)
+
+
+def getMedian(numberArray):
+    numberArray.sort()
+    index = len(numberArray) // 2
+    if(len(numberArray) % 2): 
+        print(numberArray[index])
+    else:
+        result = (numberArray[index - 1] + numberArray[index])/2
+        print(result)
+        
+def getMode(numberArray):
+    nums = numberArray
+    nums.sort()
+    counts = dict()
+    for i in nums:
+        # Get i then adds 1, alternatively updates 0 if not found (then adds 1)
+        counts[i] = counts.get(i, 0) + 1
+    mode = max(counts, key=counts.get)
+    print(mode)
+    
+getMean(numberArray)
+getMedian(numberArray)
+getMode(numberArray)
+
+```
