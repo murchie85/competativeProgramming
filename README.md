@@ -50,13 +50,36 @@ To be good at competative programming you need to move fast.
 ### Windows Shortcuts
 
 **JUMP TO ADDRESS BAR**   `ctl + L`  
-  
+    
+# Useful Code Snippets  
+
+
+
+## BE CARFUL OF ARRAY : 
+```python
+
+array = [1,2,3,4,5,6,7,8,9]
+middle = array // 2
+
+
+
+array[0:middle]
+## DOES NOT INCLUDE MIDDLE
+[1,2,3,4]
+
+
+array[middle:]
+## DOES INCLUDE MIDDLE
+[5,6,7,8,9]
+```
+
 
 ## RESOURCES  
   
 #### Hands On  
 
 - [hackerank](https://www.hackerrank.com/)
+- [lambda excercises](https://www.w3resource.com/python-exercises/lambda/index.php)
   
 ### Theory and Tips  
   
@@ -67,7 +90,6 @@ To be good at competative programming you need to move fast.
 - [Google FAQ](https://codingcompetitions.withgoogle.com/kickstart/faq)
 
 
-# Useful Code Snippets
 
 
 
@@ -139,3 +161,39 @@ def getWeightedMean(inputArray,weightArray):
     
 getWeightedMean(inputArray,weightArray)
 ```
+
+
+
+## Quartiles and median
+
+```python
+array = [3, 5, 7, 8, 12, 13, 14, 18, 21]
+import random 
+
+
+def getMid(chosenRange):
+    if(len(chosenRange) % 2):
+        return(chosenRange[len(chosenRange)//2])
+    else:
+        return((chosenRange[len(chosenRange)//2 - 1]  + chosenRange[len(chosenRange)//2 ] ) // 2)
+
+
+M = getMid(array)
+
+
+Q1r = array[0:len(array) // 2]
+
+if(len(array)%2):
+    # odd (skip median as already used)
+    q3r = array[len(array) // 2 + 1:]
+    # even
+else:
+    q3r = array[len(array) // 2:]
+
+
+
+print(getMid(Q1r))
+print(M)
+print(getMid(q3r))
+```
+
